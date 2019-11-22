@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mongoose Flights</title>
+    <link rel='stylesheets' href='../../public/stylesheets/style.css'> 
+</head>
+<body>
+    <h2>Enter a Flight</h2>
+    <form action='flights' method="POST">
+        <label>Flight Number:
+            <input type='text' name ='flightNo'>
+        </label><br>
+        <label>Airline:
+            <input type='text' name ='airline'>
+        </label><br>
+        <label>Departs:
+            <input type='text' name ='departs'>
+        </label>
+        <% console.log()%>
+    </form>
+    <a><input type="submit" value="Enter Flight" href='/flights'></a>
+
+</body>
+</html>

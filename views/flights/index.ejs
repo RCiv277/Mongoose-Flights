@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheets' href='../../public/stylesheets/style.css'> 
+</head>
+<body>
+    <h1>Flights</h1>
+    <% flights.forEach(idx => { %>
+    <h1><%= idx.airline %></h1>
+    <h1><%= idx.flightNo %></h1>
+    <h1><%= idx.departs %></h1>
+    <% }) %>
+    <a href='/addFlight'>New Flight</a> 
+</body>
+</html>
