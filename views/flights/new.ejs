@@ -9,7 +9,7 @@
 </head>
 <body>
     <h2>Enter a Flight</h2>
-    <form action='flights' method="POST">
+    <form action='/add' method="POST">
         <label>Flight Number:
             <input type='text' name ='flightNo'>
         </label><br>
@@ -19,9 +19,8 @@
         <label>Departs:
             <input type='text' name ='departs'>
         </label>
+            <input type='submit' value='Submit a Flight'>
         <% console.log()%>
     </form>
-    <a><input type="submit" value="Enter Flight" href='/flights'></a>
-
 </body>
 </html>

@@ -5,10 +5,10 @@ var flightsCtrl = require('../controllers/flights')
 router.get('/', flightsCtrl.index)
 router.get('/flights', flightsCtrl.index)
 //router.get('/addFlight', ()=>{console.log('routestest')})
-router.get('/addFlight', flightsCtrl.newFlight)
+router.get('/flights/addFlight', flightsCtrl.newFlight)
+router.get('/:id', flightsCtrl.show)
 
-
-router.post('/add', flightsCtrl.create)
+router.post('/add', flightsCtrl.createFlight)
 
 
 module.exports = router;

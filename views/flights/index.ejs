@@ -10,10 +10,13 @@
 <body>
     <h1>Flights</h1>
     <% flights.forEach(idx => { %>
-    <h1><%= idx.airline %></h1>
-    <h1><%= idx.flightNo %></h1>
-    <h1><%= idx.departs %></h1>
+    <a href='/flights/<%= flights._id %>'><ol>
+        <ls><%= idx.airline %></ls>
+        <ls><%= idx.flightNo %></ls>
+        <ls><%= idx.departs %></ls>
+    </ol>
+    <a>
     <% }) %>
-    <a href='/addFlight'>New Flight</a> 
+    <a href='/flights/addFlight'>New Flight</a> 
 </body>
 </html>
